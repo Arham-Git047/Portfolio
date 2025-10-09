@@ -1,0 +1,16 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "Interactive developer portfolio with flashcards and project slides",
+  "main": "index.html",
+  "scripts": {
+    "dev": "http-server -p 3000",
+    "start": "http-server -p 8080"
+  },
+  "keywords": ["portfolio", "developer", "interactive", "web", "flashcards"],
+  "author": "Arham Kelkar",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
