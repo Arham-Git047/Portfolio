@@ -100,6 +100,28 @@ const skillsData = [
 
 const projectsData = [
     {
+<<<<<<< HEAD
+=======
+        id: 6,
+        title: "Aegis AI: Intelligent Disaster Response System",
+        shortDescription: "Multi-agent AI system for automated threat assessment and emergency dispatch",
+        image: "/api/placeholder/400/250",
+        technologies: ["Multi-Agent AI", "NLP", "Predictive Analytics", "Python"],
+        detailedDescription: "Intelligent disaster response system featuring specialized Sentinel, Oracle, and Logistics agents for automated threat assessment, decision intelligence, and emergency resource optimization.",
+        keyFeatures: [
+            "Sentinel vision agent for automated threat assessment",
+            "Oracle decision intelligence agent for situational analysis",
+            "Logistics agent for emergency resource optimization",
+            "Real-time NLP pipelines for situational awareness",
+            "Predictive models trained on 10K+ historical disaster records",
+            "Bottleneck detection that reduced response latency by 30%"
+        ],
+        liveUrl: "#",
+        githubUrl: "https://github.com/Arham-Git047",
+        status: "Completed"
+    },
+    {
+>>>>>>> e339a93 (Port)
         id: 1,
         title: "Disaster Prediction & Risk Mitigation",
         shortDescription: "Multi-model AI system for disaster prediction and risk assessment",
@@ -203,8 +225,12 @@ const navMenu = document.querySelector('.nav-menu');
 const typingText = document.getElementById('typingText');
 const skillsGrid = document.getElementById('skillsGrid');
 const projectsGrid = document.getElementById('projectsGrid');
+<<<<<<< HEAD
 const contactForm = document.getElementById('contactForm');
 const formStatus = document.getElementById('formStatus');
+=======
+
+>>>>>>> e339a93 (Port)
 
 // Theme Management
 class ThemeManager {
@@ -632,6 +658,7 @@ class ProjectsManager {
     }
 }
 
+<<<<<<< HEAD
 // Contact Form Management
 class ContactFormManager {
     constructor() {
@@ -783,6 +810,9 @@ class ContactFormManager {
         }
     }
 }
+=======
+
+>>>>>>> e339a93 (Port)
 
 // Scroll Animations
 class ScrollAnimations {
@@ -868,8 +898,11 @@ document.addEventListener('DOMContentLoaded', () => {
         new ProjectsManager();
         console.log('ProjectsManager initialized');
         
+<<<<<<< HEAD
         new ContactFormManager();
         console.log('ContactFormManager initialized');
+=======
+>>>>>>> e339a93 (Port)
         
         new ScrollAnimations();
         console.log('ScrollAnimations initialized');
@@ -956,7 +989,10 @@ if (typeof module !== 'undefined' && module.exports) {
         TypingAnimation,
         SkillsManager,
         ProjectsManager,
+<<<<<<< HEAD
         ContactFormManager,
+=======
+>>>>>>> e339a93 (Port)
         ScrollAnimations
     };
 }
