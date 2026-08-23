@@ -366,33 +366,6 @@ a:hover {
   color: var(--color-primary-hover);
 }
 
-<<<<<<< HEAD
-code,
-pre {
-  font-family: var(--font-family-mono);
-  font-size: calc(var(--font-size-base) * 0.95);
-  background-color: var(--color-secondary);
-  border-radius: var(--radius-sm);
-}
-
-code {
-  padding: var(--space-1) var(--space-4);
-}
-
-pre {
-  padding: var(--space-16);
-  margin: var(--space-16) 0;
-  overflow: auto;
-  border: 1px solid var(--color-border);
-}
-
-pre code {
-  background: none;
-  padding: 0;
-}
-
-=======
->>>>>>> e339a93 (Port)
 /* Buttons */
 .btn {
   display: inline-flex;
@@ -408,8 +381,6 @@ pre code {
   border: none;
   text-decoration: none;
   position: relative;
-<<<<<<< HEAD
-=======
   overflow: hidden;
 }
 
@@ -427,7 +398,6 @@ pre code {
 
 .btn:hover::before {
   left: 100%;
->>>>>>> e339a93 (Port)
 }
 
 .btn:focus-visible {
@@ -436,31 +406,6 @@ pre code {
 }
 
 .btn--primary {
-<<<<<<< HEAD
-  background: var(--color-primary);
-  color: var(--color-btn-primary-text);
-}
-
-.btn--primary:hover {
-  background: var(--color-primary-hover);
-}
-
-.btn--primary:active {
-  background: var(--color-primary-active);
-}
-
-.btn--secondary {
-  background: var(--color-secondary);
-  color: var(--color-text);
-}
-
-.btn--secondary:hover {
-  background: var(--color-secondary-hover);
-}
-
-.btn--secondary:active {
-  background: var(--color-secondary-active);
-=======
   background: linear-gradient(135deg, var(--color-primary), var(--color-teal-400));
   color: var(--color-btn-primary-text);
   box-shadow: 0 8px 20px rgba(var(--color-primary-rgb, 33, 128, 141), 0.3);
@@ -473,7 +418,6 @@ pre code {
 
 .btn--primary:active {
   transform: translateY(-1px);
->>>>>>> e339a93 (Port)
 }
 
 .btn--outline {
@@ -486,171 +430,11 @@ pre code {
   background: var(--color-secondary);
 }
 
-<<<<<<< HEAD
-.btn--sm {
-  padding: var(--space-4) var(--space-12);
-  font-size: var(--font-size-sm);
-  border-radius: var(--radius-sm);
-}
-
-.btn--lg {
-  padding: var(--space-10) var(--space-20);
-  font-size: var(--font-size-lg);
-  border-radius: var(--radius-md);
-}
-
-.btn--full-width {
-  width: 100%;
-}
-
-=======
->>>>>>> e339a93 (Port)
 .btn:disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
 
-<<<<<<< HEAD
-/* Form elements */
-.form-control {
-  display: block;
-  width: 100%;
-  padding: var(--space-8) var(--space-12);
-  font-size: var(--font-size-md);
-  line-height: 1.5;
-  color: var(--color-text);
-  background-color: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-base);
-  transition: border-color var(--duration-fast) var(--ease-standard),
-    box-shadow var(--duration-fast) var(--ease-standard);
-}
-
-textarea.form-control {
-  font-family: var(--font-family-base);
-  font-size: var(--font-size-base);
-}
-
-select.form-control {
-  padding: var(--space-8) var(--space-12);
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-image: var(--select-caret-light);
-  background-repeat: no-repeat;
-  background-position: right var(--space-12) center;
-  background-size: 16px;
-  padding-right: var(--space-32);
-}
-
-/* Add a dark mode specific caret */
-@media (prefers-color-scheme: dark) {
-  select.form-control {
-    background-image: var(--select-caret-dark);
-  }
-}
-
-/* Also handle data-color-scheme */
-[data-color-scheme="dark"] select.form-control {
-  background-image: var(--select-caret-dark);
-}
-
-[data-color-scheme="light"] select.form-control {
-  background-image: var(--select-caret-light);
-}
-
-.form-control:focus {
-  border-color: var(--color-primary);
-  outline: var(--focus-outline);
-}
-
-.form-label {
-  display: block;
-  margin-bottom: var(--space-8);
-  font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-sm);
-}
-
-.form-group {
-  margin-bottom: var(--space-16);
-}
-
-/* Card component */
-.card {
-  background-color: var(--color-surface);
-  border-radius: var(--radius-lg);
-  border: 1px solid var(--color-card-border);
-  box-shadow: var(--shadow-sm);
-  overflow: hidden;
-  transition: box-shadow var(--duration-normal) var(--ease-standard);
-}
-
-.card:hover {
-  box-shadow: var(--shadow-md);
-}
-
-.card__body {
-  padding: var(--space-16);
-}
-
-.card__header,
-.card__footer {
-  padding: var(--space-16);
-  border-bottom: 1px solid var(--color-card-border-inner);
-}
-
-/* Status indicators - simplified with CSS variables */
-.status {
-  display: inline-flex;
-  align-items: center;
-  padding: var(--space-6) var(--space-12);
-  border-radius: var(--radius-full);
-  font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-sm);
-}
-
-.status--success {
-  background-color: rgba(
-    var(--color-success-rgb, 33, 128, 141),
-    var(--status-bg-opacity)
-  );
-  color: var(--color-success);
-  border: 1px solid
-    rgba(var(--color-success-rgb, 33, 128, 141), var(--status-border-opacity));
-}
-
-.status--error {
-  background-color: rgba(
-    var(--color-error-rgb, 192, 21, 47),
-    var(--status-bg-opacity)
-  );
-  color: var(--color-error);
-  border: 1px solid
-    rgba(var(--color-error-rgb, 192, 21, 47), var(--status-border-opacity));
-}
-
-.status--warning {
-  background-color: rgba(
-    var(--color-warning-rgb, 168, 75, 47),
-    var(--status-bg-opacity)
-  );
-  color: var(--color-warning);
-  border: 1px solid
-    rgba(var(--color-warning-rgb, 168, 75, 47), var(--status-border-opacity));
-}
-
-.status--info {
-  background-color: rgba(
-    var(--color-info-rgb, 98, 108, 113),
-    var(--status-bg-opacity)
-  );
-  color: var(--color-info);
-  border: 1px solid
-    rgba(var(--color-info-rgb, 98, 108, 113), var(--status-border-opacity));
-}
-
-=======
->>>>>>> e339a93 (Port)
 /* Container layout */
 .container {
   width: 100%;
@@ -681,94 +465,7 @@ select.form-control {
   }
 }
 
-<<<<<<< HEAD
-/* Utility classes */
-.flex {
-  display: flex;
-}
-.flex-col {
-  flex-direction: column;
-}
-.items-center {
-  align-items: center;
-}
-.justify-center {
-  justify-content: center;
-}
-.justify-between {
-  justify-content: space-between;
-}
-.gap-4 {
-  gap: var(--space-4);
-}
-.gap-8 {
-  gap: var(--space-8);
-}
-.gap-16 {
-  gap: var(--space-16);
-}
-
-.m-0 {
-  margin: 0;
-}
-.mt-8 {
-  margin-top: var(--space-8);
-}
-.mb-8 {
-  margin-bottom: var(--space-8);
-}
-.mx-8 {
-  margin-left: var(--space-8);
-  margin-right: var(--space-8);
-}
-.my-8 {
-  margin-top: var(--space-8);
-  margin-bottom: var(--space-8);
-}
-
-.p-0 {
-  padding: 0;
-}
-.py-8 {
-  padding-top: var(--space-8);
-  padding-bottom: var(--space-8);
-}
-.px-8 {
-  padding-left: var(--space-8);
-  padding-right: var(--space-8);
-}
-.py-16 {
-  padding-top: var(--space-16);
-  padding-bottom: var(--space-16);
-}
-.px-16 {
-  padding-left: var(--space-16);
-  padding-right: var(--space-16);
-}
-
-.block {
-  display: block;
-}
-.hidden {
-  display: none;
-}
-
 /* Accessibility */
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
-}
-
-=======
-/* Accessibility */
->>>>>>> e339a93 (Port)
 :focus-visible {
   outline: var(--focus-outline);
   outline-offset: 2px;
@@ -1000,8 +697,6 @@ select.form-control {
   font-size: var(--font-size-xl);
   transition: all var(--duration-normal) var(--ease-standard);
   border: 2px solid transparent;
-<<<<<<< HEAD
-=======
   position: relative;
   overflow: hidden;
 }
@@ -1015,17 +710,11 @@ select.form-control {
   opacity: 0;
   transition: opacity var(--duration-normal) var(--ease-standard);
   z-index: -1;
->>>>>>> e339a93 (Port)
 }
 
 .social-links a:hover {
   background: var(--color-primary);
   color: var(--color-btn-primary-text);
-<<<<<<< HEAD
-  transform: translateY(-3px);
-  border-color: var(--color-primary);
-  box-shadow: 0 8px 25px rgba(var(--color-primary-rgb, 33, 128, 141), 0.3);
-=======
   transform: translateY(-5px) scale(1.1);
   border-color: var(--color-primary);
   box-shadow: 0 12px 30px rgba(var(--color-primary-rgb, 33, 128, 141), 0.4);
@@ -1033,47 +722,11 @@ select.form-control {
 
 .social-links a:hover::before {
   opacity: 1;
->>>>>>> e339a93 (Port)
 }
 
 .hero-image {
   display: flex;
   justify-content: center;
-<<<<<<< HEAD
-}
-
-.image-placeholder {
-  width: 320px;
-  height: 320px;
-  background: var(--color-surface);
-  border-radius: var(--radius-full);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 120px;
-  color: var(--color-primary);
-  border: 4px solid var(--color-primary);
-  box-shadow: 0 20px 40px rgba(var(--color-primary-rgb, 33, 128, 141), 0.2);
-  transition: all var(--duration-normal) var(--ease-standard);
-  position: relative;
-  overflow: hidden;
-}
-
-.image-placeholder::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, rgba(var(--color-primary-rgb, 33, 128, 141), 0.1) 0%, rgba(var(--color-teal-300-rgb, 50, 184, 198), 0.1) 100%);
-  border-radius: inherit;
-}
-
-.image-placeholder:hover {
-  transform: scale(1.05);
-  box-shadow: 0 25px 50px rgba(var(--color-primary-rgb, 33, 128, 141), 0.3);
-=======
   align-items: center;
 }
 
@@ -1127,7 +780,6 @@ select.form-control {
   50% {
     opacity: 0.6;
   }
->>>>>>> e339a93 (Port)
 }
 
 /* Section Styles */
@@ -1137,8 +789,6 @@ select.form-control {
   font-size: var(--font-size-3xl);
   position: relative;
   color: var(--color-text);
-<<<<<<< HEAD
-=======
   font-weight: var(--font-weight-bold);
   letter-spacing: -1px;
 }
@@ -1152,7 +802,6 @@ select.form-control {
   border-radius: var(--radius-sm);
   margin: 0 auto var(--space-16);
   animation: slideInFromTop 0.8s ease-out;
->>>>>>> e339a93 (Port)
 }
 
 .section-title::after {
@@ -1167,12 +816,6 @@ select.form-control {
   border-radius: var(--radius-sm);
 }
 
-<<<<<<< HEAD
-/* About Section */
-.about {
-  padding: 100px 0;
-  background: var(--color-surface);
-=======
 @keyframes slideInFromTop {
   from {
     width: 0;
@@ -1199,7 +842,6 @@ select.form-control {
   right: 0;
   height: 1px;
   background: linear-gradient(90deg, transparent, var(--color-primary), transparent);
->>>>>>> e339a93 (Port)
 }
 
 .about-content {
@@ -1221,8 +863,6 @@ select.form-control {
   border-radius: var(--radius-lg);
   margin: var(--space-32) 0;
   border: 1px solid var(--color-card-border);
-<<<<<<< HEAD
-=======
   position: relative;
   overflow: hidden;
   transition: all var(--duration-normal) var(--ease-standard);
@@ -1240,7 +880,6 @@ select.form-control {
 
 .education-info:hover {
   box-shadow: 0 10px 30px rgba(var(--color-primary-rgb, 33, 128, 141), 0.15);
->>>>>>> e339a93 (Port)
 }
 
 .education-info h3 {
@@ -1273,13 +912,6 @@ select.form-control {
   border-radius: var(--radius-lg);
   border: 1px solid var(--color-card-border);
   transition: all var(--duration-normal) var(--ease-standard);
-<<<<<<< HEAD
-}
-
-.stat:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-lg);
-=======
   position: relative;
   overflow: hidden;
 }
@@ -1304,29 +936,22 @@ select.form-control {
 
 .stat:hover::before {
   opacity: 1;
->>>>>>> e339a93 (Port)
 }
 
 .stat h3 {
   font-size: var(--font-size-3xl);
   color: var(--color-primary);
   margin-bottom: var(--space-8);
-<<<<<<< HEAD
-=======
   position: relative;
   z-index: 1;
->>>>>>> e339a93 (Port)
 }
 
 .stat p {
   color: var(--color-text-secondary);
   font-weight: var(--font-weight-medium);
   margin: 0;
-<<<<<<< HEAD
-=======
   position: relative;
   z-index: 1;
->>>>>>> e339a93 (Port)
 }
 
 .download-btn {
@@ -1341,8 +966,6 @@ select.form-control {
 .skills {
   padding: 100px 0;
   background: var(--color-bg-1);
-<<<<<<< HEAD
-=======
   position: relative;
 }
 
@@ -1356,7 +979,6 @@ select.form-control {
   background: radial-gradient(circle, rgba(var(--color-primary-rgb, 33, 128, 141), 0.08), transparent);
   border-radius: 50%;
   pointer-events: none;
->>>>>>> e339a93 (Port)
 }
 
 .skills-filter {
@@ -1377,8 +999,6 @@ select.form-control {
   transition: all var(--duration-normal) var(--ease-standard);
   font-weight: var(--font-weight-medium);
   font-size: var(--font-size-sm);
-<<<<<<< HEAD
-=======
   position: relative;
   overflow: hidden;
 }
@@ -1395,17 +1015,10 @@ select.form-control {
   transform: translate(-50%, -50%);
   transition: width var(--duration-normal) var(--ease-standard), height var(--duration-normal) var(--ease-standard);
   z-index: -1;
->>>>>>> e339a93 (Port)
 }
 
 .filter-btn:hover,
 .filter-btn.active {
-<<<<<<< HEAD
-  background: var(--color-primary);
-  color: var(--color-btn-primary-text);
-  border-color: var(--color-primary);
-  transform: translateY(-2px);
-=======
   background: linear-gradient(135deg, var(--color-primary), var(--color-teal-400));
   color: var(--color-btn-primary-text);
   border-color: var(--color-primary);
@@ -1417,7 +1030,6 @@ select.form-control {
 .filter-btn.active::before {
   width: 300px;
   height: 300px;
->>>>>>> e339a93 (Port)
 }
 
 .skills-grid {
@@ -1428,12 +1040,8 @@ select.form-control {
 
 .skill-card {
   perspective: 1000px;
-<<<<<<< HEAD
-  height: 220px;
-=======
   height: 260px;
   cursor: pointer;
->>>>>>> e339a93 (Port)
 }
 
 .skill-card-inner {
@@ -1453,10 +1061,7 @@ select.form-control {
 .skill-card-front,
 .skill-card-back {
   position: absolute;
-<<<<<<< HEAD
-=======
   inset: 0;
->>>>>>> e339a93 (Port)
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
@@ -1467,27 +1072,14 @@ select.form-control {
   align-items: center;
   justify-content: center;
   text-align: center;
-<<<<<<< HEAD
-  box-shadow: var(--shadow-md);
-  border: 1px solid var(--color-card-border);
-=======
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   border: 1px solid var(--color-card-border);
   overflow: hidden;
   transition: all var(--duration-normal) var(--ease-standard);
->>>>>>> e339a93 (Port)
 }
 
 .skill-card-front {
   background: var(--color-surface);
-<<<<<<< HEAD
-}
-
-.skill-card-back {
-  background: var(--color-primary);
-  color: var(--color-btn-primary-text);
-  transform: rotateY(180deg);
-=======
   overflow: hidden;
 }
 
@@ -1512,7 +1104,6 @@ select.form-control {
   color: var(--color-btn-primary-text);
   transform: rotateY(180deg);
   z-index: 1;
->>>>>>> e339a93 (Port)
 }
 
 .skill-icon {
@@ -1569,8 +1160,6 @@ select.form-control {
 .projects {
   padding: 100px 0;
   background: var(--color-surface);
-<<<<<<< HEAD
-=======
   position: relative;
 }
 
@@ -1584,7 +1173,6 @@ select.form-control {
   background: radial-gradient(circle, rgba(var(--color-teal-400-rgb, 45, 166, 178), 0.08), transparent);
   border-radius: 50%;
   pointer-events: none;
->>>>>>> e339a93 (Port)
 }
 
 .projects-grid {
@@ -1597,19 +1185,12 @@ select.form-control {
   background: var(--color-surface);
   border-radius: var(--radius-lg);
   border: 1px solid var(--color-card-border);
-<<<<<<< HEAD
-  box-shadow: var(--shadow-md);
-=======
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
->>>>>>> e339a93 (Port)
   overflow: hidden;
   transition: all var(--duration-normal) var(--ease-standard);
   cursor: pointer;
   position: relative;
-<<<<<<< HEAD
-=======
   backdrop-filter: blur(10px);
->>>>>>> e339a93 (Port)
 }
 
 .project-card::before {
@@ -1619,23 +1200,14 @@ select.form-control {
   left: 0;
   right: 0;
   bottom: 0;
-<<<<<<< HEAD
-  background: linear-gradient(135deg, rgba(var(--color-primary-rgb, 33, 128, 141), 0.05) 0%, rgba(var(--color-teal-400-rgb, 45, 166, 178), 0.05) 100%);
-=======
   background: linear-gradient(135deg, rgba(var(--color-primary-rgb, 33, 128, 141), 0.1) 0%, rgba(var(--color-teal-400-rgb, 45, 166, 178), 0.1) 100%);
->>>>>>> e339a93 (Port)
   opacity: 0;
   transition: opacity var(--duration-normal) var(--ease-standard);
 }
 
 .project-card:hover {
-<<<<<<< HEAD
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-lg);
-=======
   transform: translateY(-12px) scale(1.02);
   box-shadow: 0 20px 50px rgba(var(--color-primary-rgb, 33, 128, 141), 0.2);
->>>>>>> e339a93 (Port)
 }
 
 .project-card:hover::before {
@@ -1834,8 +1406,6 @@ select.form-control {
 .experience {
   padding: 100px 0;
   background: var(--color-bg-2);
-<<<<<<< HEAD
-=======
   position: relative;
   overflow: hidden;
 }
@@ -1851,7 +1421,6 @@ select.form-control {
   border-radius: 50%;
   pointer-events: none;
   transform: translateY(-50%);
->>>>>>> e339a93 (Port)
 }
 
 .timeline {
@@ -1936,24 +1505,15 @@ select.form-control {
   padding: var(--space-24);
   border-radius: var(--radius-lg);
   border: 1px solid var(--color-card-border);
-<<<<<<< HEAD
-  box-shadow: var(--shadow-sm);
-=======
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
->>>>>>> e339a93 (Port)
   transition: all var(--duration-normal) var(--ease-standard);
   position: relative;
 }
 
 .timeline-content:hover {
-<<<<<<< HEAD
-  box-shadow: var(--shadow-lg);
-  transform: translateY(-2px);
-=======
   box-shadow: 0 15px 40px rgba(var(--color-primary-rgb, 33, 128, 141), 0.15);
   transform: translateY(-5px);
   border-color: var(--color-primary);
->>>>>>> e339a93 (Port)
 }
 
 .timeline-content h3 {
@@ -1987,8 +1547,6 @@ select.form-control {
 .achievements {
   padding: 100px 0;
   background: var(--color-bg-3);
-<<<<<<< HEAD
-=======
   position: relative;
 }
 
@@ -2002,7 +1560,6 @@ select.form-control {
   background: radial-gradient(circle, rgba(var(--color-success-rgb), 0.08), transparent);
   border-radius: 50%;
   pointer-events: none;
->>>>>>> e339a93 (Port)
 }
 
 .achievements-grid {
@@ -2016,11 +1573,7 @@ select.form-control {
   padding: var(--space-32);
   border-radius: var(--radius-lg);
   border: 1px solid var(--color-card-border);
-<<<<<<< HEAD
-  box-shadow: var(--shadow-md);
-=======
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
->>>>>>> e339a93 (Port)
   text-align: center;
   transition: all var(--duration-normal) var(--ease-standard);
   position: relative;
@@ -2034,23 +1587,14 @@ select.form-control {
   left: 0;
   right: 0;
   bottom: 0;
-<<<<<<< HEAD
-  background: linear-gradient(135deg, rgba(var(--color-primary-rgb, 33, 128, 141), 0.05) 0%, rgba(var(--color-success-rgb), 0.05) 100%);
-=======
   background: linear-gradient(135deg, rgba(var(--color-primary-rgb, 33, 128, 141), 0.08) 0%, rgba(var(--color-success-rgb), 0.08) 100%);
->>>>>>> e339a93 (Port)
   opacity: 0;
   transition: opacity var(--duration-normal) var(--ease-standard);
 }
 
 .achievement-card:hover {
-<<<<<<< HEAD
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-lg);
-=======
   transform: translateY(-10px) scale(1.02);
   box-shadow: 0 20px 50px rgba(var(--color-primary-rgb, 33, 128, 141), 0.2);
->>>>>>> e339a93 (Port)
 }
 
 .achievement-card:hover::before {
@@ -2060,11 +1604,7 @@ select.form-control {
 .achievement-icon {
   width: 80px;
   height: 80px;
-<<<<<<< HEAD
-  background: var(--color-primary);
-=======
   background: linear-gradient(135deg, var(--color-primary), var(--color-teal-400));
->>>>>>> e339a93 (Port)
   border-radius: var(--radius-full);
   display: flex;
   align-items: center;
@@ -2072,9 +1612,6 @@ select.form-control {
   margin: 0 auto var(--space-20);
   color: var(--color-btn-primary-text);
   font-size: 2.5rem;
-<<<<<<< HEAD
-  box-shadow: 0 8px 25px rgba(var(--color-primary-rgb, 33, 128, 141), 0.3);
-=======
   box-shadow: 0 8px 25px rgba(var(--color-primary-rgb, 33, 128, 141), 0.4);
   transition: all var(--duration-normal) var(--ease-standard);
   position: relative;
@@ -2083,7 +1620,6 @@ select.form-control {
 
 .achievement-card:hover .achievement-icon {
   transform: scale(1.1) rotate(-5deg);
->>>>>>> e339a93 (Port)
 }
 
 .achievement-card h3 {
@@ -2134,8 +1670,6 @@ select.form-control {
 .personal {
   padding: 100px 0;
   background: var(--color-surface);
-<<<<<<< HEAD
-=======
   position: relative;
 }
 
@@ -2149,7 +1683,6 @@ select.form-control {
   background: radial-gradient(circle, rgba(var(--color-primary-rgb, 33, 128, 141), 0.06), transparent);
   border-radius: 50%;
   pointer-events: none;
->>>>>>> e339a93 (Port)
 }
 
 .personal-content {
@@ -2163,15 +1696,6 @@ select.form-control {
   padding: var(--space-32);
   border-radius: var(--radius-lg);
   border: 1px solid var(--color-card-border);
-<<<<<<< HEAD
-  box-shadow: var(--shadow-sm);
-  transition: all var(--duration-normal) var(--ease-standard);
-}
-
-.personal-card:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-md);
-=======
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   transition: all var(--duration-normal) var(--ease-standard);
   position: relative;
@@ -2197,7 +1721,6 @@ select.form-control {
 
 .personal-card:hover::before {
   opacity: 1;
->>>>>>> e339a93 (Port)
 }
 
 .personal-card h3 {
@@ -2281,51 +1804,6 @@ select.form-control {
 /* Contact Section */
 .contact {
   padding: 100px 0;
-<<<<<<< HEAD
-  background: var(--color-bg-5);
-}
-
-.contact-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-32);
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.contact-info h3 {
-  margin-bottom: var(--space-16);
-  color: var(--color-text);
-  font-size: var(--font-size-2xl);
-}
-
-.contact-info p {
-  color: var(--color-text-secondary);
-  margin-bottom: var(--space-24);
-  line-height: 1.7;
-  font-size: var(--font-size-lg);
-}
-
-.contact-item {
-  display: flex;
-  align-items: center;
-  gap: var(--space-12);
-  margin-bottom: var(--space-16);
-  color: var(--color-text-secondary);
-  font-size: var(--font-size-lg);
-  transition: all var(--duration-fast) var(--ease-standard);
-}
-
-.contact-item:hover {
-  color: var(--color-primary);
-}
-
-.contact-item i {
-  color: var(--color-primary);
-  width: 24px;
-  text-align: center;
-  font-size: var(--font-size-xl);
-=======
   background: linear-gradient(135deg, var(--color-bg-5), rgba(var(--color-primary-rgb, 33, 128, 141), 0.03));
   position: relative;
   overflow: hidden;
@@ -2358,7 +1836,6 @@ select.form-control {
 .contact .container {
   position: relative;
   z-index: 1;
->>>>>>> e339a93 (Port)
 }
 
 .contact-social {
@@ -2378,8 +1855,6 @@ select.form-control {
   color: var(--color-text);
   transition: all var(--duration-normal) var(--ease-standard);
   border: 2px solid transparent;
-<<<<<<< HEAD
-=======
   position: relative;
   overflow: hidden;
   font-size: var(--font-size-lg);
@@ -2394,44 +1869,11 @@ select.form-control {
   opacity: 0;
   transition: opacity var(--duration-normal) var(--ease-standard);
   z-index: -1;
->>>>>>> e339a93 (Port)
 }
 
 .contact-social a:hover {
   background: var(--color-primary);
   color: var(--color-btn-primary-text);
-<<<<<<< HEAD
-  transform: translateY(-3px);
-  border-color: var(--color-primary);
-  box-shadow: 0 8px 25px rgba(var(--color-primary-rgb, 33, 128, 141), 0.3);
-}
-
-.contact-form {
-  background: var(--color-surface);
-  padding: var(--space-32);
-  border-radius: var(--radius-lg);
-  border: 1px solid var(--color-card-border);
-  box-shadow: var(--shadow-md);
-}
-
-.form-status {
-  margin-top: var(--space-16);
-  padding: var(--space-12);
-  border-radius: var(--radius-base);
-  display: none;
-}
-
-.form-status.success {
-  background: rgba(var(--color-success-rgb), 0.1);
-  color: var(--color-success);
-  border: 1px solid rgba(var(--color-success-rgb), 0.2);
-}
-
-.form-status.error {
-  background: rgba(var(--color-error-rgb), 0.1);
-  color: var(--color-error);
-  border: 1px solid rgba(var(--color-error-rgb), 0.2);
-=======
   transform: translateY(-5px) scale(1.15) rotate(5deg);
   border-color: var(--color-primary);
   box-shadow: 0 12px 35px rgba(var(--color-primary-rgb, 33, 128, 141), 0.4);
@@ -2439,22 +1881,15 @@ select.form-control {
 
 .contact-social a:hover::before {
   opacity: 1;
->>>>>>> e339a93 (Port)
 }
 
 /* Footer */
 .footer {
-<<<<<<< HEAD
-  background: var(--color-bg-6);
-=======
   background: linear-gradient(135deg, var(--color-bg-6), rgba(var(--color-primary-rgb, 33, 128, 141), 0.05));
->>>>>>> e339a93 (Port)
   padding: var(--space-32) 0;
   text-align: center;
   color: var(--color-text-secondary);
   border-top: 1px solid var(--color-border);
-<<<<<<< HEAD
-=======
   position: relative;
 }
 
@@ -2472,19 +1907,15 @@ select.form-control {
   margin: 0;
   font-weight: 500;
   letter-spacing: 0.5px;
->>>>>>> e339a93 (Port)
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-<<<<<<< HEAD
-=======
   .hero {
     min-height: auto;
     padding: 100px 0 56px;
   }
 
->>>>>>> e339a93 (Port)
   .nav-menu {
     position: fixed;
     top: 70px;
@@ -2524,15 +1955,11 @@ select.form-control {
   .hero-content {
     grid-template-columns: 1fr;
     text-align: center;
-<<<<<<< HEAD
-    gap: var(--space-32);
-=======
     gap: var(--space-24);
   }
 
   .hero-image {
     margin-top: var(--space-8);
->>>>>>> e339a93 (Port)
   }
 
   .hero-name {
@@ -2569,13 +1996,6 @@ select.form-control {
     grid-template-columns: 1fr;
   }
 
-<<<<<<< HEAD
-  .contact-content {
-    grid-template-columns: 1fr;
-  }
-
-=======
->>>>>>> e339a93 (Port)
   .timeline::before {
     left: 20px;
   }
@@ -2591,15 +2011,6 @@ select.form-control {
     left: 8px !important;
     right: auto !important;
   }
-<<<<<<< HEAD
-
-  .image-placeholder {
-    width: 260px;
-    height: 260px;
-    font-size: 100px;
-  }
-=======
->>>>>>> e339a93 (Port)
 }
 
 @media (max-width: 480px) {
@@ -2648,8 +2059,6 @@ select.form-control {
 .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
-<<<<<<< HEAD
-=======
   animation: fadeInScale 0.6s ease-out;
 }
 
@@ -2662,7 +2071,6 @@ select.form-control {
     opacity: 1;
     transform: translateY(0) scale(1);
   }
->>>>>>> e339a93 (Port)
 }
 
 .loading {
@@ -2697,10 +2105,6 @@ html {
   .navbar,
   .hero-buttons,
   .social-links,
-<<<<<<< HEAD
-  .contact-form,
-=======
->>>>>>> e339a93 (Port)
   .theme-toggle {
     display: none;
   }
@@ -2724,11 +2128,6 @@ html {
 @media (max-width: 720px) {
     .hero-photo { width: 160px; height: 160px; }
 }
-<<<<<<< HEAD
-/* If you kept the placeholder, hide it when photo exists */
-.image-placeholder { display: none; }
-=======
->>>>>>> e339a93 (Port)
 
 .project-photo {
   width: 100%;

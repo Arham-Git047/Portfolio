@@ -100,8 +100,6 @@ const skillsData = [
 
 const projectsData = [
     {
-<<<<<<< HEAD
-=======
         id: 6,
         title: "Aegis AI: Intelligent Disaster Response System",
         shortDescription: "Multi-agent AI system for automated threat assessment and emergency dispatch",
@@ -121,7 +119,6 @@ const projectsData = [
         status: "Completed"
     },
     {
->>>>>>> e339a93 (Port)
         id: 1,
         title: "Disaster Prediction & Risk Mitigation",
         shortDescription: "Multi-model AI system for disaster prediction and risk assessment",
@@ -225,12 +222,7 @@ const navMenu = document.querySelector('.nav-menu');
 const typingText = document.getElementById('typingText');
 const skillsGrid = document.getElementById('skillsGrid');
 const projectsGrid = document.getElementById('projectsGrid');
-<<<<<<< HEAD
-const contactForm = document.getElementById('contactForm');
-const formStatus = document.getElementById('formStatus');
-=======
 
->>>>>>> e339a93 (Port)
 
 // Theme Management
 class ThemeManager {
@@ -658,161 +650,7 @@ class ProjectsManager {
     }
 }
 
-<<<<<<< HEAD
-// Contact Form Management
-class ContactFormManager {
-    constructor() {
-        this.init();
-    }
 
-    init() {
-        if (contactForm) {
-            contactForm.addEventListener('submit', (e) => this.handleSubmit(e));
-            
-            // Add real-time validation
-            const inputs = contactForm.querySelectorAll('input, textarea');
-            inputs.forEach(input => {
-                input.addEventListener('blur', () => this.validateField(input));
-                input.addEventListener('input', () => this.clearFieldError(input));
-            });
-        }
-    }
-
-    validateField(field) {
-        const value = field.value.trim();
-        let isValid = true;
-        let errorMessage = '';
-
-        switch (field.type) {
-            case 'email':
-                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                if (!emailRegex.test(value)) {
-                    isValid = false;
-                    errorMessage = 'Please enter a valid email address';
-                }
-                break;
-            case 'text':
-            case 'textarea':
-                if (value.length < 2) {
-                    isValid = false;
-                    errorMessage = 'This field must be at least 2 characters long';
-                }
-                break;
-        }
-
-        if (!isValid) {
-            this.showFieldError(field, errorMessage);
-        } else {
-            this.clearFieldError(field);
-        }
-
-        return isValid;
-    }
-
-    showFieldError(field, message) {
-        field.classList.add('error');
-        let errorElement = field.parentNode.querySelector('.field-error');
-        if (!errorElement) {
-            errorElement = document.createElement('span');
-            errorElement.className = 'field-error';
-            errorElement.style.color = 'var(--color-error)';
-            errorElement.style.fontSize = 'var(--font-size-sm)';
-            errorElement.style.marginTop = 'var(--space-4)';
-            errorElement.style.display = 'block';
-            field.parentNode.appendChild(errorElement);
-        }
-        errorElement.textContent = message;
-    }
-
-    clearFieldError(field) {
-        field.classList.remove('error');
-        const errorElement = field.parentNode.querySelector('.field-error');
-        if (errorElement) {
-            errorElement.remove();
-        }
-    }
-
-    async handleSubmit(e) {
-        e.preventDefault();
-        
-        // Validate all fields
-        const inputs = contactForm.querySelectorAll('input, textarea');
-        let isFormValid = true;
-        inputs.forEach(input => {
-            if (!this.validateField(input)) {
-                isFormValid = false;
-            }
-        });
-
-        if (!isFormValid) {
-            this.showStatus('Please fix the errors above before submitting.', 'error');
-            return;
-        }
-        
-        const formData = new FormData(contactForm);
-        const data = {
-            name: formData.get('name'),
-            email: formData.get('email'),
-            subject: formData.get('subject'),
-            message: formData.get('message')
-        };
-
-        // Show loading state
-        const submitBtn = contactForm.querySelector('button[type="submit"]');
-        const originalText = submitBtn.innerHTML;
-        submitBtn.innerHTML = '<div class="loading"></div> Sending...';
-        submitBtn.disabled = true;
-
-        // Simulate form submission (replace with actual API call)
-        try {
-            await this.simulateFormSubmission(data);
-            this.showStatus('Message sent successfully! I\'ll get back to you soon.', 'success');
-            contactForm.reset();
-            // Clear any remaining field errors
-            inputs.forEach(input => this.clearFieldError(input));
-        } catch (error) {
-            this.showStatus('Failed to send message. Please try again or contact me directly at arhamkelkar15@gmail.com', 'error');
-        } finally {
-            submitBtn.innerHTML = originalText;
-            submitBtn.disabled = false;
-        }
-    }
-
-    simulateFormSubmission(data) {
-        return new Promise((resolve, reject) => {
-            setTimeout(() => {
-                // Simulate success (90% chance)
-                if (Math.random() > 0.1) {
-                    console.log('Form data:', data); // In real app, this would be sent to server
-                    resolve();
-                } else {
-                    reject(new Error('Simulated network error'));
-                }
-            }, 2000);
-        });
-    }
-
-    showStatus(message, type) {
-        if (formStatus) {
-            formStatus.textContent = message;
-            formStatus.className = `form-status ${type}`;
-            formStatus.style.display = 'block';
-            
-            // Auto-hide success messages
-            if (type === 'success') {
-                setTimeout(() => {
-                    formStatus.style.display = 'none';
-                }, 5000);
-            }
-            
-            // Scroll to status message
-            formStatus.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }
-    }
-}
-=======
-
->>>>>>> e339a93 (Port)
 
 // Scroll Animations
 class ScrollAnimations {
@@ -898,11 +736,6 @@ document.addEventListener('DOMContentLoaded', () => {
         new ProjectsManager();
         console.log('ProjectsManager initialized');
         
-<<<<<<< HEAD
-        new ContactFormManager();
-        console.log('ContactFormManager initialized');
-=======
->>>>>>> e339a93 (Port)
         
         new ScrollAnimations();
         console.log('ScrollAnimations initialized');
@@ -989,10 +822,6 @@ if (typeof module !== 'undefined' && module.exports) {
         TypingAnimation,
         SkillsManager,
         ProjectsManager,
-<<<<<<< HEAD
-        ContactFormManager,
-=======
->>>>>>> e339a93 (Port)
         ScrollAnimations
     };
 }
