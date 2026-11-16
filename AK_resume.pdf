@@ -195,6 +195,15 @@ BT 1 0 0 1 0 1.2 Tm /F2 8.8 Tf 10 TL (EXPERIENCE) Tj T* ET
 Q
 Q
 q
+1 0 0 1 54.18898 535.8433 cm
+q
+.55 w
+1 J
+.2 .372549 .568627 RG
+n 0 0 m 486.8976 0 l S
+Q
+Q
+q
 1 0 0 1 53.85827 522.2933 cm
 q
 0 0 0 rg
@@ -203,14 +212,14 @@ q
 1 0 0 1 0 1 cm
 q
 .113725 .152941 .2 rg
-BT 1 0 0 1 0 1.45 Tm /F2 8.1 Tf 9.55 TL (Nextvia Technologies Private Limited - AI/ML Intern) Tj T* ET
+BT 1 0 0 1 0 1.45 Tm /F2 8.1 Tf 9.55 TL (Nexvia Technologies Private Limited - AI/ML Intern) Tj T* ET
 Q
 Q
 q
 1 0 0 1 368.5039 1.05 cm
 q
 .32549 .384314 .45098 rg
-BT 1 0 0 1 0 1.5 Tm /F1 8 Tf 9.55 TL 4.335118 0 Td (Oct 2026 - Nov 2026 \(Expected\)) Tj T* -4.335118 0 Td ET
+BT 1 0 0 1 0 1.5 Tm /F1 8 Tf 9.5 TL 4.335118 0 Td (Oct 2026 - Nov 2026 \(Expected\)) Tj T* -4.335118 0 Td ET
 Q
 Q
 q
@@ -239,11 +248,14 @@ q
 1 0 0 1 368.5039 1.05 cm
 q
 .32549 .384314 .45098 rg
-BT 1 0 0 1 0 1.5 Tm /F1 8 Tf 9.5 TL 48.79112 0 Td (Jun 2024 - Jul 2024) Tj T* -48.7912 0 Td ET
+BT 1 0 0 1 0 1.5 Tm /F1 8 Tf 9.5 TL 48.79112 0 Td (Jun 2024 - Jul 2024) Tj T* -48.79112 0 Td ET
 Q
 Q
 q
-1
+Q
+Q
+Q
+q
 1 0 0 1 54.18898 472.4433 cm
 q
 BT 1 0 0 1 10 11.1 Tm -7 0 Td 9.55 TL /F1 8 Tf .113725 .152941 .2 rg (\177 Developed responsive interfaces using HTML5, CSS3, JavaScript, and Tailwind CSS; translated requirements into modular UI) Tj T* 7 0 Td (components and debugged implementation issues to improve usability.) Tj T* ET
