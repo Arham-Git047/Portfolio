@@ -12,4 +12,17 @@
   // Gallery images are served as optimized WebP assets; no client-side
   // base64 decoding is needed.
 
+
+  // Load user-supplied VOIS photographs from the existing text assets.
+  $('img[data-photo-base64]').forEach(async image => {
+    try {
+      const response = await fetch(image.dataset.photoBase64);
+      if (!response.ok) throw new Error('Photo asset unavailable');
+      const encoded = (await response.text()).trim();
+      if (!/^[A-Za-z0-9+/=]+$/.test(encoded)) throw new Error('Invalid photo asset');
+      image.src = 'data:image/jpeg;base64,' + encoded;
+    } catch (error) {
+      image.alt = 'Photo unavailable: ' + image.alt;
+    }
+  });
 })();
