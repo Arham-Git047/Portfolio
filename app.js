@@ -14,7 +14,7 @@
 
 
   // Load user-supplied VOIS photographs from the existing text assets.
-  $('img[data-photo-base64]').forEach(async image => {
+  $$('img[data-photo-base64]').forEach(async image => {
     try {
       const response = await fetch(image.dataset.photoBase64);
       if (!response.ok) throw new Error('Photo asset unavailable');
