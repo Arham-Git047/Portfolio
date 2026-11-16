@@ -95,3 +95,61 @@
   .gallery-photo-grid img { height: 130px; }
   .gallery-photo-grid figcaption { font-size: 7px; padding: 7px; }
 }
+
+
+/* Cleaner, edge-to-edge VOIS event gallery */
+.recognition-gallery { align-items: center; gap: 42px; }
+.recognition-gallery-copy p { max-width: 340px; }
+.gallery-panel {
+  border: 0;
+  padding: 0;
+  min-height: 0;
+  background: transparent;
+  box-shadow: none;
+}
+.gallery-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px 16px;
+}
+.gallery-photo-grid figure {
+  margin: 0;
+  min-width: 0;
+  border: 0;
+  overflow: visible;
+  background: transparent;
+}
+.gallery-photo-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  background: transparent;
+  filter: none;
+  border: 0;
+  box-shadow: none;
+  transition: transform .28s ease;
+}
+.gallery-photo-grid figure:hover img { transform: translateY(-2px); }
+.gallery-photo-grid figcaption {
+  padding: 7px 0 0;
+  color: #9eabc0;
+  font: 8px/1.5 var(--mono);
+  letter-spacing: .045em;
+  background: transparent;
+}
+.gallery-caption {
+  border-top: 1px solid rgba(180,195,225,.1);
+  margin-top: 14px;
+  padding: 12px 0 0;
+}
+@media (max-width: 700px) {
+  .recognition-gallery { gap: 20px; }
+  .gallery-photo-grid { gap: 12px; }
+  .gallery-photo-grid figcaption { font-size: 7px; }
+}
+@media (max-width: 420px) {
+  .gallery-photo-grid { grid-template-columns: 1fr; }
+  .gallery-photo-grid figcaption { font-size: 8px; }
+}
