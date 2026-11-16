@@ -1,334 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arham Usman Kelkar - AI & Data Science Student | Portfolio</title>
-    <meta name="description" content="Arham Usman Kelkar - AI & Data Science Student passionate about emerging technologies, hackathon finalist with expertise in Python, Machine Learning, and Front-End Development.">
-    <link rel="stylesheet" href="style.css?v=5">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#090b12">
+  <meta name="description" content="Arham Kelkar — AI & Machine Learning Engineer, building intelligent systems with machine learning, GenAI and real-time data.">
+  <meta property="og:title" content="Arham Kelkar — AI Engineer"><meta property="og:description" content="Selected AI, machine learning and GenAI projects, experience and achievements."><meta property="og:type" content="website">
+  <title>Arham Kelkar | AI &amp; Machine Learning Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"><script defer src="app.js"></script>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home">Arham Kelkar</a>
-            </div>
-            <div class="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#experience" class="nav-link">Experience</a>
-                <a href="#achievements" class="nav-link">Achievements</a>
-                <a href="#contact" class="nav-link">Contact</a>
-                <button class="theme-toggle" id="themeToggle">
-                    <i class="fas fa-moon"></i>
-                </button>
-            </div>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-name">Arham Usman Kelkar</h1>
-                <div class="hero-roles">
-                    <span id="typingText"></span>
-                    <span class="cursor">|</span>
-                </div>
-                <p class="hero-description">
-                    Passionate learner and innovator with a strong foundation in AI, currently diving deep into 
-                    Artificial Intelligence, Data Science, and Real-Time Systems. I actively explore how emerging 
-                    tech like AI, IoT, AR/VR, and NLP can solve real-world challenges.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn--primary">View Projects</a>
-                    <a href="#contact" class="btn btn--outline">Contact Me</a>
-                </div>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/arham-kelkar-96b64b21b/" target="_blank" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/Arham-Git047" target="_blank" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="mailto:arhamkelkar15@gmail.com" aria-label="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="./Arham%20Kelkar.png" alt="Arham Usman Kelkar" class="hero-photo">
-            </div>
-        </div>
+  <div class="progress" id="progress"></div>
+  <header class="site-header"><a class="brand" href="#home" aria-label="Arham Kelkar home"><span class="brand-mark">AK</span><span>ARHAM KELKAR<span class="brand-dot">.</span></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav" id="nav"><a href="#about">About</a><a href="#work">Projects</a><a href="#journey">Journey</a><a href="#recognition">Recognition</a><a href="#contact" class="nav-contact">Let's talk <span>↗</span></a></nav>
+  </header>
+  <main>
+    <section class="hero section-shell" id="home"><div class="hero-grid"></div><div class="orb orb-one"></div><div class="orb orb-two"></div>
+      <div class="hero-copy reveal"><div class="eyebrow"><span class="pulse"></span> AI &amp; DATA SCIENCE ENGINEER · PUNE, INDIA</div>
+        <h1>Building ideas<br>into <span class="gradient-text">intelligent</span><br>systems<span class="accent">.</span></h1>
+        <p class="hero-lede">I’m Arham — an AI &amp; ML developer interested in turning complex problems into practical, human-centred technology.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#work">Explore my work <span>↘</span></a><a class="button button-quiet" href="AK_resume.pdf" target="_blank" rel="noreferrer">View résumé <span>↗</span></a></div>
+        <div class="hero-links"><a href="https://github.com/Arham-Git047" target="_blank" rel="noreferrer">GITHUB ↗</a><a href="https://www.linkedin.com/in/arham-kelkar/" target="_blank" rel="noreferrer">LINKEDIN ↗</a><a href="mailto:arhamkelkar15@gmail.com">EMAIL ↗</a></div>
+      </div>
+      <div class="hero-visual reveal"><div class="visual-frame"><div class="frame-top"><span>CREATIVE ENGINEERING / 001</span><span class="live-indicator">AVAILABLE FOR OPPORTUNITIES</span></div>
+        <div class="portrait-wrap"><img src="Arham%20Kelkar.png" alt="Portrait of Arham Kelkar"><div class="portrait-shade"></div><div class="portrait-caption"><span>ARHAM KELKAR</span><span>AI / ML / GENAI</span></div></div>
+        <div class="visual-foot"><span>CURIOUS BY DESIGN.</span><span>BUILT TO EXPERIMENT ↗</span></div></div><div class="orbit-label label-a">MODEL<br>BUILDER</div><div class="orbit-label label-b">PROBLEM<br>SOLVER</div></div>
+      <a class="scroll-cue" href="#about"><span></span> SCROLL TO EXPLORE</a>
     </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I'm Arham Usman Kelkar, an AI & Data Science student at Dr. D. Y. Patil School of Science and Technology, 
-                        Pune. My passion lies in exploring how emerging technologies like AI, IoT, AR/VR, and NLP can solve 
-                        real-world challenges, especially in disaster management, smart navigation, and agritech systems.
-                    </p>
-                    <p>
-                        Currently pursuing B.Tech in Artificial Intelligence and Data Science (2023-2027), I maintain exceptional 
-                        academic performance with a perfect 10.0 CGPA in First Year and 9.7 CGPA in Second Year. I'm actively 
-                        involved in hackathons, having reached finalist status in 15+ competitions from renowned institutes and companies.
-                    </p>
-                    <div class="education-info">
-                        <h3>Education</h3>
-                        <div class="education-item">
-                            <h4>B.Tech - Artificial Intelligence and Data Science</h4>
-                            <p>Dr. D. Y. Patil School of Science and Technology, Pune</p>
-                            <p>2023-2027 | Current: 9.7 CGPA</p>
-                        </div>
-                    </div>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <h3>10.0</h3>
-                            <p>CGPA (FE)</p>
-                        </div>
-                        <div class="stat">
-                            <h3>9.7</h3>
-                            <p>CGPA (SE)</p>
-                        </div>
-                        <div class="stat">
-                            <h3>15+</h3>
-                            <p>Hackathon Finalist</p>
-                        </div>
-                    </div>
-                    <a href="./AK_resume.pdf" class="btn btn--primary download-btn" download="Arham-Kelkar-Resume.pdf">
-                        <i class="fas fa-download"></i>
-                        Download Resume
-                    </a>
-                </div>
-            </div>
-        </div>
+    <section class="ticker" aria-label="Areas of interest"><div class="ticker-track"><span>ARTIFICIAL INTELLIGENCE</span><i>✳</i><span>MACHINE LEARNING</span><i>✳</i><span>GENERATIVE AI</span><i>✳</i><span>DATA ENGINEERING</span><i>✳</i><span>ARTIFICIAL INTELLIGENCE</span><i>✳</i><span>MACHINE LEARNING</span><i>✳</i><span>GENERATIVE AI</span><i>✳</i></div></section>
+    <section class="section section-shell about-section" id="about"><div class="section-kicker"><span>01 / ABOUT</span><span>THE PERSON BEHIND THE BUILDS</span></div>
+      <div class="about-layout"><div><h2 class="section-heading">Curiosity first.<br><span class="muted-heading">Impact always.</span></h2></div>
+        <div class="about-copy"><p class="lead-copy">I’m a final-year B.Tech student in Artificial Intelligence &amp; Data Science at Dr. D. Y. Patil School of Science and Technology, Pune.</p><p>I enjoy working across the AI lifecycle — from exploring data and training models to designing useful applications. My interests span machine learning, GenAI, multi-agent systems and real-time intelligent platforms.</p><p>I learn by building, testing ideas with teams, and taking on challenges that push me beyond the classroom.</p><div class="about-tags"><span>Machine Learning</span><span>GenAI &amp; LLMs</span><span>Python</span><span>Data Science</span><span>Cloud &amp; APIs</span></div></div></div>
+      <div class="stats-row"><div class="stat-cell"><strong>20<span>×</span></strong><span>HACKATHON FINALIST</span></div><div class="stat-cell"><strong>3<span>+</span></strong><span>YEARS OF BUILDING</span></div><div class="stat-cell"><strong>AI<span>/</span>ML</strong><span>PRIMARY FOCUS</span></div><div class="stat-cell"><strong>2027</strong><span>GRADUATING CLASS</span></div></div>
     </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Skills & Expertise</h2>
-            <div class="skills-filter">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="Programming Languages">Languages</button>
-                <button class="filter-btn" data-filter="Data Science">Data Science</button>
-                <button class="filter-btn" data-filter="Front-End Development">Development</button>
-                <button class="filter-btn" data-filter="Tools">Tools</button>
-                <button class="filter-btn" data-filter="Emerging Tech">Emerging Tech</button>
-                <button class="filter-btn" data-filter="Soft Skills">Soft Skills</button>
-            </div>
-            <div class="skills-grid" id="skillsGrid">
-                <!-- Skills will be populated by JavaScript -->
-            </div>
-        </div>
+    <section class="section section-shell work-section" id="work"><div class="section-kicker"><span>02 / SELECTED WORK</span><span>THREE BUILDS. REAL PROBLEMS.</span></div><div class="section-title-row"><h2 class="section-heading">Featured <span class="gradient-text">projects.</span></h2><p>A closer look at the systems I’ve been exploring and engineering.</p></div>
+      <div class="projects-grid">
+        <article class="project-card project-wide reveal"><div class="project-art aegis-art"><div class="art-grid"></div><div class="radar radar-one"></div><div class="radar radar-two"></div><div class="node node-one">SENTINEL</div><div class="node node-two">ORACLE</div><div class="node node-three">LOGISTICS</div><div class="art-center">AEGIS<span>AI</span></div><div class="art-status">SWARM INTELLIGENCE / DISASTER RESPONSE</div></div>
+          <div class="project-info"><div class="project-meta"><span>01 — MULTI-AGENT AI</span><span class="status">CONCEPT / BUILD</span></div><h3>Aegis AI</h3><p>An offline-first, multi-agent disaster response concept designed to support decisions when communication networks are unreliable.</p><div class="tag-row"><span>Python</span><span>Gemini</span><span>React</span><span>AWS</span></div><div class="project-bottom"><span>Sentinel · Oracle · Logistics</span><a href="https://github.com/Arham-Git047" target="_blank" rel="noreferrer">VIEW PROJECT ↗</a></div></div></article>
+        <article class="project-card reveal"><div class="project-art fraud-art"><div class="scan-line"></div><div class="fraud-top"><span>TRANSACTION MONITOR</span><span>LIVE / SIMULATED</span></div><div class="fraud-score"><small>RISK SIGNAL</small><strong>0.92</strong><em>HIGH RISK</em></div><div class="fraud-network"><span></span><span></span><span></span><span></span><span></span><span></span><b>ACCOUNT<br>CLUSTER</b></div><div class="fraud-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+          <div class="project-info"><div class="project-meta"><span>02 — MACHINE LEARNING</span><span class="status">IN PROGRESS</span></div><h3>Real-Time Fraud Detection</h3><p>Streaming transaction risk scoring with gradient-boosted models and graph learning to surface suspicious account relationships.</p><div class="tag-row"><span>XGBoost</span><span>GraphSAGE</span><span>Kafka</span><span>MLflow</span></div><div class="project-bottom"><span>IEEE-CIS · Stream analytics</span><a href="https://github.com/Arham-Git047" target="_blank" rel="noreferrer">VIEW PROJECT ↗</a></div></div></article>
+        <article class="project-card reveal"><div class="project-art job-art"><div class="job-window"><div class="window-head"><span></span><span></span><span></span><b>SMART MATCH</b></div><div class="match-score"><strong>94%</strong><span>PROFILE MATCH</span></div><div class="match-lines"><i></i><i></i><i></i></div><div class="match-pill">AI-POWERED RECOMMENDATION</div></div><div class="job-orbit">GEN<br>AI</div></div>
+          <div class="project-info"><div class="project-meta"><span>03 — GENAI / NLP</span><span class="status">PROJECT</span></div><h3>AI Job Recommendation</h3><p>A contextual job-matching experience exploring semantic representations and generative AI to connect candidate profiles with relevant roles.</p><div class="tag-row"><span>Gemini</span><span>NLP</span><span>Embeddings</span><span>Python</span></div><div class="project-bottom"><span>Semantic matching</span><a href="https://github.com/Arham-Git047" target="_blank" rel="noreferrer">VIEW PROJECT ↗</a></div></div></article>
+      </div><p class="project-note">Project links currently point to your GitHub profile. Replace them with individual repository URLs when confirmed.</p>
     </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid" id="projectsGrid">
-                <!-- Projects populated by JavaScript -->
-            </div>
-        </div>
+    <section class="section section-shell journey-section" id="journey"><div class="section-kicker"><span>03 / EXPERIENCE</span><span>LEARNING THROUGH ACTION</span></div><div class="section-title-row"><h2 class="section-heading">The journey<span class="accent">.</span></h2><p>Experiences that shaped how I think, collaborate and build.</p></div>
+      <div class="timeline"><article class="timeline-entry"><div class="timeline-date">2026 — NOW</div><div class="timeline-marker"></div><div class="timeline-detail"><span class="timeline-type">LEADERSHIP / COMMUNITY</span><h3>Campus Ambassador · Unstop</h3><p>Representing opportunities, encouraging student participation and connecting peers with technical events.</p></div></article>
+        <article class="timeline-entry"><div class="timeline-date">2025 — 2026</div><div class="timeline-marker"></div><div class="timeline-detail"><span class="timeline-type">LEADERSHIP</span><h3>Secretary · Hackathon Club</h3><p>Supporting student-led technical initiatives, hackathon participation and collaborative problem-solving.</p></div></article>
+        <article class="timeline-entry"><div class="timeline-date">2024</div><div class="timeline-marker"></div><div class="timeline-detail"><span class="timeline-type">INTERNSHIP</span><h3>Front-End Development Intern · IBM Edunet Foundation</h3><p>Completed a six-week programme focused on front-end development and practical implementation.</p></div></article>
+        <article class="timeline-entry"><div class="timeline-date">2023 — 2027</div><div class="timeline-marker"></div><div class="timeline-detail"><span class="timeline-type">EDUCATION</span><h3>B.Tech · Artificial Intelligence &amp; Data Science</h3><p>Dr. D. Y. Patil School of Science and Technology, Pune. Building a foundation in computing, data and intelligent systems.</p></div></article></div>
     </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">Experience & Timeline</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot current"></div>
-                    <div class="timeline-content">
-                        <h3>Campus Ambassador</h3>
-                        <span class="timeline-company">Unstop</span>
-                        <span class="timeline-period">Currently Working</span>
-                        <p>Representing Unstop platform in college, organizing events, and promoting opportunities among students.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Secretary</h3>
-                        <span class="timeline-company">Hackathon Club, DYPSST</span>
-                        <p>Led student initiatives, technical mentorship, and institutional competitive coding operations at DYPSST.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Front-End Development Intern</h3>
-                        <span class="timeline-company">Edunet Foundation</span>
-                        <span class="timeline-period">June 2024 - July 2024</span>
-                        <p>2-month intensive internship focusing on modern front-end development practices and real-world project implementation.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot education"></div>
-                    <div class="timeline-content">
-                        <h3>B.Tech AI & Data Science Student</h3>
-                        <span class="timeline-company">Dr. D. Y. Patil School of Science and Technology</span>
-                        <span class="timeline-period">2023 - 2027</span>
-                        <p>Pursuing degree with exceptional academic performance - 10.0 CGPA in FE, 9.7 CGPA in SE. Focusing on AI, ML, and data science applications.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section class="section section-shell recognition-section" id="recognition"><div class="section-kicker"><span>04 / RECOGNITION</span><span>COMPETE · COLLABORATE · CREATE</span></div>
+      <div class="recognition-layout"><div><div class="big-number">20<span>×</span></div><h2 class="section-heading">Finalist.<br><span class="muted-heading">And still building.</span></h2><p class="recognition-copy">Hackathons have been a proving ground for turning ideas into prototypes, collaborating under pressure and learning from ambitious teams.</p><div class="recognition-badge">20X HACKATHON FINALIST</div></div>
+        <div class="gallery-panel"><div class="gallery-placeholder"><div class="gallery-icon">＋</div><strong>Your hackathon story belongs here.</strong><p>Upload event photos, team moments, certificates and stage pictures to turn this space into a personal achievement gallery.</p><span>PHOTO GALLERY / AWAITING YOUR IMAGES</span></div><div class="gallery-caption"><span>BEHIND THE BUILDS</span><span>EVENTS · TEAMS · MILESTONES</span></div></div></div>
+      <div class="recognition-foot"><span>SELECTED RECOGNITION</span><div><strong>VOIS Innovation Marathon 2.0</strong><span>Winner · Aegis AI</span></div><div><strong>Wadhwani Foundation</strong><span>Incubation offer · Smart Hydroponics concept</span></div></div>
     </section>
-
-    <!-- Achievements Section -->
-    <section id="achievements" class="achievements">
-        <div class="container">
-            <h2 class="section-title">Achievements & Recognition</h2>
-            <div class="achievements-grid">
-                <div class="achievement-card">
-                    <div class="achievement-icon">
-                        <i class="fas fa-medal"></i>
-                    </div>
-                    <h3>Winner - VOIS Innovation Marathon 2.0</h3>
-                    <p>Secured 1st place in the national-level hackathon for architecting Aegis AI</p>
-                    <span class="achievement-category competition">Competition</span>
-                </div>
-                <div class="achievement-card">
-                    <div class="achievement-icon">
-                        <i class="fas fa-rocket"></i>
-                    </div>
-                    <h3>Wadhwani Foundation Incubation Offer</h3>
-                    <p>Received incubation offer for AI + AR/VR-based Smart Hydroponics Startup Idea</p>
-                    <span class="achievement-year">2024</span>
-                    <span class="achievement-category innovation">Innovation</span>
-                </div>
-                <div class="achievement-card">
-                    <div class="achievement-icon">
-                        <i class="fas fa-trophy"></i>
-                    </div>
-                    <h3>15X Hackathon Finalist</h3>
-                    <p>Achieved finalist status in 15+ hackathons organized by renowned Institutes and Companies</p>
-                    <span class="achievement-year">2023-2024</span>
-                    <span class="achievement-category competition">Competition</span>
-                </div>
-                <div class="achievement-card">
-                    <div class="achievement-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <h3>Academic Excellence</h3>
-                    <p>Perfect 10.0 CGPA in First Year, 9.7 CGPA in Second Year</p>
-                    <span class="achievement-year">2024-2025</span>
-                    <span class="achievement-category academic">Academic</span>
-                </div>
-            </div>
-        </div>
+    <section class="section section-shell toolkit-section" id="toolkit"><div class="section-kicker"><span>05 / TOOLKIT</span><span>TOOLS I USE TO MAKE THINGS HAPPEN</span></div><h2 class="section-heading">My current <span class="gradient-text">stack.</span></h2>
+      <div class="toolkit-grid"><div><span class="toolkit-label">LANGUAGES</span><p>Python · SQL · C · JavaScript · R</p></div><div><span class="toolkit-label">AI / ML</span><p>Scikit-learn · XGBoost · TensorFlow · Keras · NLP</p></div><div><span class="toolkit-label">GENAI</span><p>LLMs · Gemini · Prompt Engineering · Multi-Agent Systems</p></div><div><span class="toolkit-label">DATA</span><p>Pandas · NumPy · Matplotlib · Tableau</p></div><div><span class="toolkit-label">DEVELOPMENT</span><p>React · Node.js · FastAPI · HTML · CSS</p></div><div><span class="toolkit-label">TOOLS &amp; CLOUD</span><p>Git · GitHub · Docker · AWS · MLflow</p></div></div>
     </section>
-
-    <!-- Personal Section -->
-    <section id="personal" class="personal">
-        <div class="container">
-            <h2 class="section-title">Personal Details</h2>
-            <div class="personal-content">
-                <div class="personal-card">
-                    <h3><i class="fas fa-language"></i> Languages</h3>
-                    <div class="language-list">
-                        <span class="language-tag">English</span>
-                        <span class="language-tag">Hindi</span>
-                        <span class="language-tag">Marathi</span>
-                        <span class="language-tag">Urdu</span>
-                    </div>
-                </div>
-                <div class="personal-card">
-                    <h3><i class="fas fa-heart"></i> Hobbies & Interests</h3>
-                    <div class="hobby-list">
-                        <div class="hobby-item">
-                            <i class="fas fa-baseball-ball"></i>
-                            <span>Cricket</span>
-                        </div>
-                        <div class="hobby-item">
-                            <i class="fas fa-utensils"></i>
-                            <span>Cooking</span>
-                        </div>
-                        <div class="hobby-item">
-                            <i class="fas fa-seedling"></i>
-                            <span>Gardening</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="personal-card">
-                    <h3><i class="fas fa-info-circle"></i> Quick Facts</h3>
-                    <div class="fact-list">
-                        <div class="fact-item">
-                            <span class="fact-label">Date of Birth:</span>
-                            <span class="fact-value">28 January 2005</span>
-                        </div>
-                        <div class="fact-item">
-                            <span class="fact-label">Location:</span>
-                            <span class="fact-value">Pune, Maharashtra</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section class="contact-section section-shell" id="contact"><div class="contact-glow"></div><div class="section-kicker"><span>06 / CONTACT</span><span>HAVE A GOOD PROBLEM?</span></div><div class="contact-content"><span class="eyebrow">LET'S BUILD SOMETHING MEANINGFUL</span><h2>Ideas get better<br>when <span class="gradient-text">shared.</span></h2><p>Open to AI/ML opportunities, collaborative projects and conversations with people building useful technology.</p><a class="button button-primary contact-button" href="mailto:arhamkelkar15@gmail.com">Start a conversation <span>↗</span></a></div>
+      <div class="contact-footer"><a href="mailto:arhamkelkar15@gmail.com">ARHAMKELKAR15@GMAIL.COM</a><div><a href="https://github.com/Arham-Git047" target="_blank" rel="noreferrer">GITHUB ↗</a><a href="https://www.linkedin.com/in/arham-kelkar/" target="_blank" rel="noreferrer">LINKEDIN ↗</a></div><span>© <span id="year"></span> ARHAM KELKAR</span></div>
     </section>
-
-    <!-- Contact / Let's Connect (static info kept, contact form removed) -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Let's Connect</h2>
-            <p>I'm always open to discussing new opportunities, exciting projects, and innovative ideas in AI and Data Science.</p>
-
-            <ul class="contact-list" style="list-style:none;padding:0;margin-top:24px;">
-                <li style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
-                    <i class="fas fa-envelope" style="color:var(--color-primary);font-size:20px;"></i>
-                    <a href="mailto:arhamkelkar15@gmail.com">arhamkelkar15@gmail.com</a>
-                </li>
-                <li style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
-                    <i class="fas fa-user-graduate" style="color:var(--color-primary);font-size:20px;"></i>
-                    <span>23150024.dypsst@dpu.edu.in</span>
-                </li>
-                <li style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
-                    <i class="fas fa-phone" style="color:var(--color-primary);font-size:20px;"></i>
-                    <a href="tel:+917738400181">+91 7738400181</a>
-                </li>
-                <li style="display:flex;align-items:center;gap:12px;">
-                    <i class="fas fa-map-marker-alt" style="color:var(--color-primary);font-size:20px;"></i>
-                    <span>Pune, Maharashtra, India</span>
-                </li>
-            </ul>
-
-            <div class="contact-social" style="margin-top:28px;display:flex;gap:16px;">
-                <a href="https://www.linkedin.com/in/arham-kelkar-96b64b21b/" target="_blank" aria-label="LinkedIn" style="display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:50%;background:var(--muted-bg);color:inherit;text-decoration:none;">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/Arham-Git047" target="_blank" aria-label="GitHub" style="display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:50%;background:var(--muted-bg);color:inherit;text-decoration:none;">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="mailto:arhamkelkar15@gmail.com" aria-label="Email" style="display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:50%;background:var(--muted-bg);color:inherit;text-decoration:none;">
-                    <i class="fas fa-envelope"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Arham Usman Kelkar. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="app_1.js?v=2"></script>
-</body>
-</html>
+  </main>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Arham Kelkar","jobTitle":"AI & Machine Learning Engineer","url":"https://portfolio-sigma-brown-53.vercel.app/","sameAs":["https://github.com/Arham-Git047","https://www.linkedin.com/in/arham-kelkar/"]}</script>
+</body></html>
